@@ -235,6 +235,13 @@ footer {
     .container{
         width: 100%;
     }
+    /* .header{
+        width: 100%;
+    } */
+    .header-details{
+        flex-direction: column;
+    }
+
     /* .header-details,.header-details ul{
         flex-direction: column;
         width: 100%;
@@ -263,12 +270,16 @@ footer {
     }
     .some-facts{
         text-align: center;
+        margin-top: 200px;
     }
 
     .facts{
         flex-direction: column;
         gap: 10px;
         padding: 0 10px;
+    }
+    .experience{
+        margin-left:10px;
     }
     .sponspors{
         flex-direction: column;
