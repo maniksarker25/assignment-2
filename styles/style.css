@@ -195,7 +195,7 @@
     justify-content: space-around;
 }
 
-.facts div {
+.facts-item{
     border: 1px solid #FF900E;
     border-radius: 8px;
     padding: 30px;
@@ -203,8 +203,14 @@
 
 }
 
-.facts div h3 {
+.facts-item h3 {
     font-size: 35px;
+}
+.facts-item:hover{
+    cursor: pointer;
+    transform: rotate(0deg) scale(1.5) translateY(10px);
+    transition: .5s all ease;
+    z-index: 400;
 }
 /*--------------- Some designs style ---------------- */
 .some-designs {
@@ -316,6 +322,10 @@ footer {
         flex-direction: column;
         gap: 10px;
         padding: 0 10px;
+    }
+    .facts-item:hover{
+
+        transform: rotate(0deg) scale(0.8) translateY(2px);
     }
 
     .experience {
