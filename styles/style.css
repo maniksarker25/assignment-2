@@ -151,7 +151,8 @@
     text-align: center;
     /* align-items: center; */
     position:relative;
-    margin: -150px auto;
+    margin:-150px;
+    
 }
 .experience h2{
     font-size: 65px;
@@ -164,11 +165,16 @@
 }
 
 /*------------------- some facts section style------------------------- */
+
+.some-facts{
+    margin-top: 30px;
+}
 .some-facts h2 {
     font-size: 45px;
     margin-bottom: 24px;
     color: #000;
     font-weight: 700px;
+
 }
 
 .some-facts p {
@@ -246,12 +252,19 @@ footer {
     .quick-list-img{
         grid-template-columns: repeat(1,1fr);
     }
+    .quick-list-img img{
+        width: 100%;
+    }
     .quick-list, .features{
         flex-direction: column;
     }
     .features-img img{
         width: 100%;
     }
+    .some-facts{
+        text-align: center;
+    }
+
     .facts{
         flex-direction: column;
         gap: 10px;
@@ -262,6 +275,16 @@ footer {
         padding:20px 0px;
         text-align: center;
     }
+    /* .sponspors{
+        flex-direction: column;
+        gap: 20px;
+
+    }
+    .sponspors img{
+    margin-left: 70px;
+        width: 280px;
+    } */
+
 }
 .hide{
     display: none;
