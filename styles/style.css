@@ -13,8 +13,8 @@
     width: 1440px;
     margin: 0 auto;
     padding: 50px;
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -74,29 +74,37 @@
     width: 1440px;
     margin: 70px auto;
 }
+
 /*--------------------- quick list styles--------------------- */
 
-.quick-list{
+.quick-list {
     display: flex;
+    align-items: center;
     gap: 75px;
     padding: 0 40px;
+
 }
+
 .quick-list-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
-.quick-list-details h2{
+
+.quick-list-details h2 {
     font-size: 45px;
     margin-bottom: 20px;
 }
-.gray{
+
+.gray {
     color: #727272;
 }
-.orange{
+
+.orange {
     color: #FF900E;
 }
-.quick-list-details p{
+
+.quick-list-details p {
     line-height: 26px;
     margin-bottom: 20px;
 }
@@ -150,25 +158,23 @@
     color: #fff;
     text-align: center;
     /* align-items: center; */
-    position:relative;
-    margin:-150px;
-    
-}
-.experience h2{
-    font-size: 65px;
-    padding-top: 40px;
-    
+    position: relative;
+    margin: -150px;
 
 }
-.experience p{
+
+.experience h2 {
+    font-size: 65px;
+    padding-top: 40px;
+
+
+}
+
+.experience p {
     font-size: 25px;
 }
 
 /*------------------- some facts section style------------------------- */
-
-.some-facts{
-    margin-top: 30px;
-}
 .some-facts h2 {
     font-size: 45px;
     margin-bottom: 24px;
@@ -200,6 +206,27 @@
 .facts div h3 {
     font-size: 35px;
 }
+/*--------------- Some designs style ---------------- */
+.some-designs {
+    text-align: center;
+
+}
+
+.some-designs h2 {
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.designs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.some-designs img {
+    background: url(group-three-modern-architects.jpg);
+    border-radius: 8px;
+
+}
 
 /*------------------ Our Sponspors styles--------------- */
 .our-sponspors {
@@ -222,91 +249,103 @@
     filter: grayscale(100%);
 }
 
+
+
 /*-------------- footer styles----------------- */
 footer {
     width: 1440px;
     background: #FFF4E7;
     border-radius: 8px;
     text-align: center;
-    margin:0 auto;
+    margin: 0 auto;
     padding: 40px;
 }
+
+.hide{
+    display: none;
+}
+
 @media only screen and (max-width:576px) {
-    .container{
+    .container {
         width: 100%;
     }
-    /* .header{
-        width: 100%;
-    } */
+    .header-details ul{
+        flex-direction: column;
+        gap: 20px;
+    }
     .header-details{
         flex-direction: column;
+        width: 100%;
+        padding: 0;
+        padding-top: 30px;
+        gap: 20px;
     }
-
-    /* .header-details,.header-details ul{
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-     }
-    .header-details h2{
-        width: 100%;
-    } */
-    .banner.banner img{
+    .banner.banner img {
         margin: 0 auto;
         width: 100%;
         height: 100%;
         margin-top: 20px;
     }
-    .quick-list-img{
-        grid-template-columns: repeat(1,1fr);
+    .banner-title{
+        font-size: 55px;
+        padding-top: 20px;
     }
-    .quick-list-img img{
+    .quick-list-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .quick-list-img img {
         width: 100%;
     }
-    .quick-list, .features{
+
+    .quick-list,
+    .features {
         flex-direction: column;
     }
-    .features-img img{
+
+    .features-img img {
         width: 100%;
     }
-    .some-facts{
+
+    .some-facts {
         text-align: center;
         margin-top: 200px;
     }
 
-    .facts{
+    .facts {
         flex-direction: column;
         gap: 10px;
         padding: 0 10px;
     }
-    .experience{
-        margin-left:10px;
+
+    .experience {
+        margin-left: 10px;
     }
-    .sponspors{
+    .designs{
         flex-direction: column;
-        gap: 20px;
+        gap: 5px;
+    }
+    .some-designs img {
+       width: 100%;
         
     }
-    .sponspors img{
+
+    .sponspors {
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .sponspors img {
         width: 250px;
         padding-left: 60px;
     }
-    footer{
+
+    footer {
         width: 100%;
-        padding:20px 0px;
+        padding: 20px 0px;
         text-align: center;
     }
-    /* .sponspors{
-        flex-direction: column;
-        gap: 20px;
 
-    }
-    .sponspors img{
-    margin-left: 70px;
-        width: 280px;
-    ""''''
-    } */
 
-}
-.hide{
-    display: none;
 }
